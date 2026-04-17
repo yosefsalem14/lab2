@@ -1,0 +1,98 @@
+javac User.java UsersApp.java
+cmd /c "java UsersApp > out.txt"
+fc.exe out.txt outcorrect.txt
+
+*************************************************************************************
+
+Github summ:
+
+First time only
+
+Set your Git identity once:
+
+git config --global user.name "Fadi Kais"
+git config --global user.email "kaisf482@gmail.com"
+Then inside your project folder:
+
+git init
+git remote add origin https://github.com/FadiKais1/lab1-user-validation.git
+
+If the remote already exists, you do not need to add it again.
+
+Every time you change files
+
+After you edit existing files or add new ones, run:
+
+git add .
+git commit -m "Describe what you changed"
+git push
+
+Example:
+
+git add .
+git commit -m "Added comments to User and UsersApp"
+git push
+If this is your first successful push
+
+Use:
+
+git add .
+git commit -m "Initial commit - User validation lab"
+git branch -M main
+git push -u origin main
+
+After that, future pushes usually only need:
+
+git add .
+git commit -m "your message"
+git push
+If you want to check what changed before committing
+
+Use:
+
+git status
+
+This shows:
+
+modified files
+new files
+deleted files
+Useful full workflow
+
+A nice safe workflow is:
+
+git status
+git add .
+git commit -m "Updated project files"
+git push
+If you add only one specific file
+
+Instead of git add ., you can do:
+
+git add README.md
+git commit -m "Added README"
+git push
+
+Or for two files:
+
+git add User.java UsersApp.java
+git commit -m "Updated Java files"
+git push
+If you want to get the newest version from GitHub before working
+
+Use:
+
+git pull
+
+Usually helpful if you edited something on GitHub directly.
+
+Very short memory version
+
+Just remember this:
+
+git add .
+git commit -m "message"
+git push
+
+That’s the main update cycle.
+
